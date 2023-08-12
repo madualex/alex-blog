@@ -3,12 +3,14 @@ import Homepage from './pages/Homepage';
 import Blog from './pages/Blog';
 import Blogpost from './pages/Blogpost';
 import Error from './pages/Error';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Homepage />}></Route>
           <Route path='/blog' element={<Blog />}></Route>
